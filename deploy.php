@@ -13,7 +13,7 @@ set('repository', 'git@github.com:RealZark/weibo.git');
 set('git_tty', true);
 
 // Shared files/dirs between deploys
-add('shared_files', []);
+add('shared_files', ['.env']);
 add('shared_dirs', []);
 
 // Writable dirs by web server
