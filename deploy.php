@@ -19,9 +19,7 @@ add('shared_dirs', []);
 // Writable dirs by web server
 add('writable_dirs', []);
 
-
 // Hosts
-
 host('106.15.36.187')
     ->user('deployer')
     ->stage('production')
@@ -29,7 +27,6 @@ host('106.15.36.187')
     ->set('deploy_path', '/www/wwwroot/weibo');
 
 // Tasks
-
 task('build', function () {
     run('cd {{release_path}} && build');
 });
